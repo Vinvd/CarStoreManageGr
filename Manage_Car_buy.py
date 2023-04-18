@@ -4,6 +4,7 @@ from tkinter import filedialog
 from Class_CarStr import *
 from Class_Customer import *
 from Class_Receipt import *
+from Manage_Receipt import *
 import os
 import pickle
 
@@ -245,6 +246,9 @@ def Receipt_manage():
 
     Button2=Button(root,width=6, text="Receipt" , font=('arial', 15, 'bold'),fg="black", bd= 2, command=ReceiptPrint)
     Button2.place(x = 827, y =590)
+
+    Button4=Button(root,width=6, text="View all Recipts" , font=('arial', 15, 'bold'),fg="black", bd= 2, command=Receipt_management)
+    Button4.place(x = 1036, y =590)
 
 #Receipt board
     lblReceipt = Label(bottomRightTop, font=('arial', 16, 'bold'), text='Receipt', bd=2, anchor='w')
