@@ -172,13 +172,13 @@ def Receipt_manage():
     lblcar = Label(bottomLeftBottomL, font=('arial', 18, 'bold'), text=" Car's Information", fg="black", width= 15,bd=11, anchor='w')
     lblcar.grid(row=1, column=1)
 
-    lblChooseCar = Label(bottomLeftBottomL, font=('arial', 16, 'bold'), text="Name", fg="black", width= 15,bd=15, anchor='w')
+    lblChooseCar = Label(bottomLeftBottomL, font=('arial', 16, 'bold'), text="Brand", fg="black", width= 15,bd=15, anchor='w')
     lblChooseCar.grid(row=2, column=0)
     cboChooseCar = ttk.Combobox(bottomLeftBottomL,state='readonly', font=('arial', 13, 'bold'), width=30)
     cboChooseCar.bind("<<ComboboxSelected>>",clickChooseCar)
     cboChooseCar.grid(row=2, column=1)
 
-    lblcarBrand = Label(bottomLeftBottomL, font=('arial', 16, 'bold'), text="Brand", fg="black", width= 15,bd=9, anchor='w')
+    lblcarBrand = Label(bottomLeftBottomL, font=('arial', 16, 'bold'), text="Name", fg="black", width= 15,bd=9, anchor='w')
     lblcarBrand.grid(row=3, column=0)
     cboCarBrand = Entry(bottomLeftBottomL,state='readonly', font=('arial', 16, 'bold'),bd=2,bg="white", width=24,justify='left')
     cboCarBrand.grid(row=3, column=1)

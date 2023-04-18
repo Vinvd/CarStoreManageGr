@@ -83,7 +83,6 @@ def carstore_edit():
         notice = Toplevel()
         a = Label(notice,text='Done save file').pack()
 
-
     window = Tk()
     # window.geometry('1500x750')
     window.title("Car store management.")
@@ -95,14 +94,12 @@ def carstore_edit():
     menubar.add_cascade(label="File",menu=File_Menu)
     File_Menu.add_command(label="Open",command=Openfile)
     File_Menu.add_command(label="Save",command=SaveFile)
-   
 
     # frame 1
     frame1 = Frame(window, borderwidth=5,relief=SUNKEN)
     frame1.grid(row=0,column=0,padx=10, pady=10)
 
     Listbox_car_label=Label(frame1,text='Current inventory:').grid(row=0,column=0)
-
 
     Listbox_car = Listbox(frame1,bg="#ECEFF1",fg="#424242",font=("Arial",15),width=30,height=15)
     Listbox_car.grid(row=1, column=0, sticky="nsew")
@@ -131,7 +128,6 @@ def carstore_edit():
     # frame 2
     frame2 =Frame(window,borderwidth=5,relief=SUNKEN)
     frame2.grid(row=1,column=0,padx=10, pady=10)
-
 
     label1_frame2 = Label(frame2, text="Car you selected:")
     label1_frame2.grid(row=0, column=0)
