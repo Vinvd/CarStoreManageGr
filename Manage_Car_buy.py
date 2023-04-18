@@ -247,7 +247,7 @@ def Receipt_manage():
     Button2=Button(root,width=6, text="Receipt" , font=('arial', 15, 'bold'),fg="black", bd= 2, command=ReceiptPrint)
     Button2.place(x = 827, y =590)
 
-    Button4=Button(root,width=6, text="View all Recipts" , font=('arial', 15, 'bold'),fg="black", bd= 2, command=Receipt_management)
+    Button4=Button(root,width=12, text="View all Recipts" , font=('arial', 15, 'bold'),fg="black", bd= 2, command=Receipt_management)
     Button4.place(x = 1036, y =590)
 
 #Receipt board
