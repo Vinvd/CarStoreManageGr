@@ -85,7 +85,7 @@ def Receipt_manage():
 
 # Home window
     root = Tk()
-    root.geometry("1352x650+0+0")
+    root.geometry("1152x650+0+0")
     root.title("Car Store Information Management System")
     root.configure(background="black")
     root.resizable(width=False, height=False)
@@ -242,13 +242,13 @@ def Receipt_manage():
 
 #Buttons
     Button1=Button(root,width=6, text="Reset" , font=('arial', 15, 'bold'),fg="black", bd= 2, command=Reset)
-    Button1.place(x = 705, y =590)
+    Button1.place(x = 605, y =590)
 
     Button2=Button(root,width=6, text="Receipt" , font=('arial', 15, 'bold'),fg="black", bd= 2, command=ReceiptPrint)
-    Button2.place(x = 827, y =590)
+    Button2.place(x = 727, y =590)
 
     Button4=Button(root,width=12, text="View all Recipts" , font=('arial', 15, 'bold'),fg="black", bd= 2, command=Receipt_management)
-    Button4.place(x = 1036, y =590)
+    Button4.place(x = 936, y =590)
 
 #Receipt board
     lblReceipt = Label(bottomRightTop, font=('arial', 16, 'bold'), text='Receipt', bd=2, anchor='w')
